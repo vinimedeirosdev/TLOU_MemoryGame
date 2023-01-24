@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TLOU_MemoryGame/static/css/main.a930b30d.css",
+    "main.css": "/TLOU_MemoryGame/static/css/main.faa6fea4.css",
     "main.js": "/TLOU_MemoryGame/static/js/main.5ad8fadd.js",
     "static/js/787.6f60b32f.chunk.js": "/TLOU_MemoryGame/static/js/787.6f60b32f.chunk.js",
     "static/media/background_responsive.jpg": "/TLOU_MemoryGame/static/media/background_responsive.520317f5d1b7a820fb6b.jpg",
     "static/media/background.jpg": "/TLOU_MemoryGame/static/media/background.e959db8ec899994d6429.jpg",
     "index.html": "/TLOU_MemoryGame/index.html",
-    "main.a930b30d.css.map": "/TLOU_MemoryGame/static/css/main.a930b30d.css.map",
+    "main.faa6fea4.css.map": "/TLOU_MemoryGame/static/css/main.faa6fea4.css.map",
     "main.5ad8fadd.js.map": "/TLOU_MemoryGame/static/js/main.5ad8fadd.js.map",
     "787.6f60b32f.chunk.js.map": "/TLOU_MemoryGame/static/js/787.6f60b32f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a930b30d.css",
+    "static/css/main.faa6fea4.css",
     "static/js/main.5ad8fadd.js"
   ]
 }
