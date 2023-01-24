@@ -1,13 +1,123 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../public/assets/images/background.jpg);
+  background-size: 130%;
+}
+
+/* <!--GameBoard--> */
+
+#gameBoard {
+  max-width: 700px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* <!--Cards--> */
+
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card {
+  width: 135px;
+  height: 135px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
+
+.card_front,
+.card_back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(66, 64, 64, 0.767);
+  backface-visibility: hidden;
+}
+
+.card_front {
+  transform: rotateY(180deg);
+}
+
+.card_back {
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* <!--GameOver--> */
+
+#gameOver {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+
+#restart {
+  padding: 20px;
+  font-size: 20px;
+  background-color: yellow;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  body {
+    background-image: url(../public/assets/images/background_responsive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+
+  .card {
+    width: 92px;
+    height: 92px;
+  }
+
+  #gameBoard {
+    gap: 10px;
+  }
+
+  .card_front,
+  .card_back {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.733);
+  }
 }
